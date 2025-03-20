@@ -1,0 +1,23 @@
+name: First Workflow
+
+#Manually start workflow (Just one of the events)
+on: workflow_dispatch
+
+#Work that has to be done (jobs / not job)
+#Indentation - YML works on indentation
+jobs:
+  #Custom name : job-1. All other are keywords unless specified
+  job-1:
+    #Environment (Runners), find hardware specs in documentation (pre-defined hardware)
+    runs-on: ubuntu-latest
+    steps:
+      #Start with '-' and key value pairs
+      - name: Print greeting
+        run: echo "Hello GitHub Actions!"
+      - name: Print bye
+        run: "Done - Goodbye!"
+
+
+  
+      
+    
